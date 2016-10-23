@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Tizen Ye">
+		<meta name="description" content="WST homework of 1500012804">
+		<link rel="stylesheet" href="./css/style.css">
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<title>Sound of Destiny</title>
+	</head>
+	<!--来啊互相伤害啊-->
+	<script type="text/javascript">
+		alert("I love Touma Kazusa!!");
+	</script>
+    <!--除了本处使用了jQuery其他都是自己写的辣-->
+    <script type="text/javascript">
+        $(function () {
+            $("html,body").on("click", function (e) {
+                show(e);
+            });
+
+            function show(e) {
+                var n = Math.round(Math.random() * 10);
+                var $i = $("<b>").text("+" + n + "s");
+                var x = e.pageX, y = e.pageY;
+                $i.css({top: y - 20, left: x, position: "absolute", color: "#E94F06"});
+                $("body").append($i);
+                $('body').append('<embed src="button.wav" autostart="true" hidden="true" loop="false">');
+                $i.animate({top: y - 180, opacity: 0, "font-size": "1.8em", "font-family": "microsoft yahei"}, 1500, function () {
+                    $i.remove();
+                });
+                e.stopPropagation();
+            };
+        });
+    </script>
+	<body>
+		<div class="left-col">
+			<head id="header">
+				<div class="avatar">
+					<a href="/"><img src="avatar.jpg" width="100%" height="100%"></a>
+				</div>
+				<h1 class="title"><a href="/">Tizen Ye   1500012804</a></h1>
+				<p><br/><hr><br/></p>
+				<h2 class="subtitle">About me</h2>
+				<nav class="profile">
+					<li><a href="https://yezhisheng.me" target="_blank">Homepage</a></li>
+					<li><a href="https://yezhisheng.com.cn" target="_blank">Blog</a></li>
+					<li><a href="https://github.com/yzs981130" target="_blank">Github</a></li>
+					<li><a href="https://plus.google.com/u/0/107425413722523231462" target="_blank">Google+</a></li>
+				</nav>
+				<p><br/><hr><br/></p>
+				<h2 class="gays">My friends</h2>
+				<nav class="gays">
+					<li><a href="http://web.yezhisheng.com.cn:8205/" target="_blank">Lu Yiping</a></li>
+					<li><a href="http://web.yezhisheng.com.cn:8170/" target="_blank">Jet</a></li>
+					<li><a href="http://web.yezhisheng.com.cn:8013/" target="_blank">Chen Yifan</a></li>
+				</nav>
+                <p><br/><hr><br/></p>
+				<table class="side" align="center">
+                    <h2 class="gays">Homework Grades</h2>
+                    <tbody>
+                        <tr>
+                            <th>Times</th>
+                            <th>Grades</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <td rowspan="2">NaN</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td rowspan="1">NaN</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td rowspan="1">NaN</td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td rowspan="1">NaN</td>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td rowspan="1">NaN</td>
+                        </tr>
+                    </tbody>
+                </table>
+			</head>
+		</div>
+		
+		<div class="sidebar">
+			<img id="sidebar" src="./sources/kazusa.png">
+		</div>
+
+		<div class="mid-col">
+			<article class="post">
+				<div class="date"><time>Oct 8, 2016</time></div>
+				<h1 class="post-title"><a href="./homework/hw6.html" target="_blank">Homework 6</a></h1>
+				<div class="summary">
+					<p>This is summary.</p>
+					<p><a href="./homework/hw6.html">Continue reading</a></p>
+				</div>
+			</article>
+			<article class="post">
+				<div class="date"><time>Oct 8, 2016</time></div>
+				<h1 class="post-title"><a href="./homework/hw5.html" target="_blank">Homework 5</a></h1>
+				<div class="summary">
+					<p>This is summary.</p>
+					<p><a href="./homework/hw5.html">Continue reading</a></p>
+				</div>
+			</article>
+			<article class="post">
+				<div class="date"><time>Oct 8, 2016</time></div>
+				<h1 class="post-title"><a href="./homework/hw4.html" target="_blank">Homework 4</a></h1>
+				<div class="summary">
+					<p>This is summary.</p>
+					<p><a href="./homework/hw4.html">Continue reading</a></p>
+				</div>
+			</article>
+			<article class="post">
+				<div class="date"><time>Oct 8, 2016</time></div>
+				<h1 class="post-title"><a href="./homework/hw3.html" target="_blank">Homework 3</a></h1>
+				<div class="summary">
+					<p>This is summary.</p>
+					<p><a href="./homework/hw3.html">Continue reading</a></p>
+				</div>
+			</article>
+
+			<article class="post">
+				<div class="date"><time>Oct 7, 2016</time></div>
+				<h1 class="post-title">Homework 2</h1>
+				<div class="summary">
+					<p><strong>Homework 2 is to design and write this website!</strong></p>
+				</div>
+			</article>
+
+			<article class="post">
+				<div class="date"><time>Oct 1, 2016</time></div>
+				<h1 class="post-title"><a href="./homework/hw1.html" target="_blank">Homework 1</a></h1>
+				<div class="summary">
+					<p>This is summary.</p>
+					<p><a href="./homework/hw1.html">Continue reading</a></p>
+				</div>
+			</article>
+			<footer id="footer">
+				&copy;Tizen Ye 2016
+				<br/>
+				Email:<a href="mailto:admin@yezhisheng.me">admin@yezhisheng.me</a>
+				Recommended reading resolution is higher than 1366*768.
+			</footer>
+		</div>
+
+	</body>
+</html>
