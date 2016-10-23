@@ -13,3 +13,6 @@ sub error {
 my($boolean, $watched, $gender, $age, $support) = (param("boolean"), param("watched"), param("gender"), param("age"),param("support"));
 
 print header();
+
+$index = 0;
+if()
