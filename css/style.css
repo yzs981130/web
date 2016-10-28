@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "lexograph";
+    src:local("Lexographer"), url(http://randsco.com/fonts/lexograph.ttf) format("truetype");
+}
 body {
 	background:#ddd;
 	color:#666;
@@ -16,6 +20,13 @@ h1.title{
     font-size: .9em;
     line-height: 2.2;
     padding: 15px 70px 15px 40px;
+    text-align: center;
+    width: auto;
+}
+.footer{
+    font-size: .9em;
+    line-height: 2.2;
+    padding: 15px 15px 15px 40px;
     text-align: center;
     width: auto;
 }
@@ -43,6 +54,11 @@ li{
 	left: 5%;
 	padding-right:10%;
 	top: -5px;
+}
+.header{
+    text-align: center;
+    font-family: Consolas, Menlo, Monaco, monospace, serif;
+    font-size: 2em;
 }
 a:link{
 	text-decoration:none;
