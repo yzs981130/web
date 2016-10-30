@@ -1,9 +1,25 @@
+<HTML>
+
+<HEAD>
+
+    <TITLE> WST Homework 4 Survey </TITLE>
+
+</HEAD>
+
+<BODY>
+
 <?php
-/**
- * Created by PhpStorm.
- * User: yzs
- * Date: 2016/10/28
- * Time: 10:58
- */
-$string= 'Hello,World!';echo $string
+
+/* this example is designed to demonstrate some basic syntactic
+
+ elements of PHP
+*/
+
+error_reporting(15); //change the error-reporting level to 15;
+
+
+
+
 ?>
+</BODY>
+</HTML>
