@@ -5,7 +5,7 @@
  * Date: 2016/10/31
  * Time: 0:11
  */
-$con = mysqli_connect("localhost", "usr_2016_118", "23671206", "db_2016_118");
+$con = mysqli_connect("localhost", "usr_2016_118", "ZXRoMCAgICAgIExpbmsgZW5jYXA6", "db_2016_118");
 if(mysqli_connect_errno()){
     print "ERROR - Could not connect to MySQL";
     exit;
