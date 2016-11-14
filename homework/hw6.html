@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 6 Hi there</title>
+</head>
+<script>
+    var holidays = [];
+
+    function Holiday(destination, duration, cost) {
+        this.destination = destination;
+        this.duration    = duration;
+        this.cost        = cost;
+    }
+
+    function makeHoliday(dest, dur, cost) {
+        hol = new Holiday(dest, dur,cost);
+        holidays.push(hol);
+    }
+
+    function outputObject(anObject) {
+        for (f in anObject) {
+            document.write(f + " = " + anObject[f] + "<br>");
+        }
+    }
+
+    function showHolidays() {
+        for ( var i=0; i<holidays.length; i++){
+            outputObject(holidays[i]);
+            document.write("<br>");
+        }
+    }
+
+</script>
+<script>
+    function myAlert() {
+        //window.alert("AAAAAAA!!!!");
+    }
+    function myAlert2(aString) {
+        //window.alert("Alerting: " + aString);
+        return 1130;
+    }
+    function notequal(aString, bString){
+        return aString + "!=" + bString;
+    }
+
+    function askName() {
+        if (!confirm("Will your tell me your website URL please?")) {
+            window.alert("----------\nSob!....\nso\n" + "you don't want to tell me your website URL\n--------\n");
+        }
+        else {
+            var url = prompt("Your website:", "https://yezhisheng.com.cn");
+            window.location = url;
+        }
+    }
+</script>
+<body>
+<a href="Unit6.html"><h1>Homework first</h1></a>
+<br><br>
+<h1>Hi everyone!</h1>
+<script>
+    document.write("I am Tizen Ye from<b> Hefei, Anhui Province</b>.<br>");
+    document.write("I don't like watching TV and my favourite food is <b>meat</b>.<br><br>");
+    myAlert();
+    result = myAlert2("EXCITED!");
+    document.write("The return value is " + result + "<br><br>");
+    notequal("+1s", "+2s");
+</script>
+<button onclick="askName();"> What's your website</button>
+<a id="+1s" href="#" onMouseOver="self.status='+1s'; document.getElementById('+1s').innerHTML='EXCITED!'; return true;" onMouseout="self.status=''; document.getElementById('+1s').innerHTML='+1s?'"><b>+1s</b></a>
+<br><h2>Holiday Plans</h2>
+<script>
+    makeHoliday("Beijing", "1 day", "￥1500");
+    makeHoliday("Shanghai", "5 Days", "￥5000");
+    showHolidays();
+</script>
+<a href="hw6_form.html">
+    The form
+</a>
+</body>
+</html>
